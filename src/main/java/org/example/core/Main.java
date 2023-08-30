@@ -25,7 +25,7 @@ public class Main {
                 zipOutputStream.putNextEntry(entry);
 
                 // Write content to the entry
-                String content = "Hello Epam.";
+                String content = "Hello Epam!";
                 zipOutputStream.write(content.getBytes());
 
                 // Close the entry
@@ -37,7 +37,6 @@ public class Main {
     }
 
     private static void extractFilesFromTheZipArchive() {
-        // Extract files from the ZIP archive
         String zipFileName = "temporary/create_zip_from_file.zip";
 
         try (ZipInputStream zipInputStream = new ZipInputStream(Files.newInputStream(Paths.get(zipFileName)))) {

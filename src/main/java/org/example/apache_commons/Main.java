@@ -14,7 +14,6 @@ import java.util.zip.Deflater;
 
 public class Main {
     public static void main(String[] args) {
-        // gzip tar jar 7z ...
         createZipFromFile();
         extractFilesFromTheZipArchive();
     }
