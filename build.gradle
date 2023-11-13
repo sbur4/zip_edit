@@ -19,6 +19,10 @@ repositories {
 //    gradlePluginPortal()
 }
 
+wrapper {
+    gradleVersion = '8.0'
+}
+
 dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-compress
     implementation group: 'org.apache.commons', name: 'commons-compress', version: '1.23.0'
